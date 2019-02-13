@@ -47,7 +47,7 @@ def MST_Kruskal(inputFile):
     #      [neigh - the unique number of  city from the main list
     #      cost - the cost of building the blingors connection from NAME to neigh]
 
-    f = open(inputFile, 'r')
+    f = open(inputFile, 'r',encoding="utf-8")
 
     numCities = int(f.readline().rstrip('\n'))
 
@@ -227,11 +227,11 @@ def generateGraph(P, t, outFileName):
 
 
 # Connection settings
-dbName = "tr_mst"
+dbName = "GIS_P"
 userName = "postgres"
-pswd = "12345Aa"
+pswd = "210081"
 host = "127.0.0.1" #localhost
-port = "5432"
+port = "5433"
 connPostgres= [dbName, userName, pswd, host, port]
 
 
